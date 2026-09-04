@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Styles tires de « Outer Rim - Furniture & Decor » (Neronix17).
+
+     Le mod livre trois ensembles de mobilier complets - corellien, coruscanti, tatooinien -
+     dont les empreintes correspondent une a une a celles du vanilla. Chacun devient une
+     categorie de style : le meuble vanilla garde sa fonction, il change d'apparence.
+
+     Rien n'est ajoute au menu Architecte. Aucune def de batiment n'est creee.
+
+     HUIT PIECES PAR ENSEMBLE, celles dont l'empreinte colle exactement :
+       lit 1x2, lit double 2x2, chaise 1x1, tabouret 1x1, commode 2x1,
+       table de chevet 1x1, table 2x2, porte automatique 1x1.
+
+     NON REPRIS : les tables 1x1 (le vanilla n'en a pas), les tables 2x1 (le vanilla a une
+     Table1x2c en 1x2, orientation inverse - la texture serait tournee), les portes larges 2x1
+     (pas d'equivalent vanilla), et les lampes dathomiriennes, qui feraient une quatrieme
+     categorie a elles seules.
+
+     <graphicData> recopie mot pour mot depuis les defs 1.6 du mod : en 1.6 il livre ses
+     textures dans un AssetBundle Unity, elles ne sont donc pas verifiables sur disque. Copier
+     le bloc source est la seule facon de garantir chemin, graphicClass, drawSize et shader. -->
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>PAS_Corellian</defName>
+    <label>corellien</label>
+    <fixedIdeoOnly>false</fixedIdeoOnly>
+    <thingDefStyles>
+      <li>
+        <thingDef>Bed</thingDef>
+        <styleDef>PAS_Corellian_Bed</styleDef>
+      </li>
+      <li>
+        <thingDef>DoubleBed</thingDef>
+        <styleDef>PAS_Corellian_DoubleBed</styleDef>
+      </li>
+      <li>
+        <thingDef>DiningChair</thingDef>
+        <styleDef>PAS_Corellian_DiningChair</styleDef>
+      </li>
+      <li>
+        <thingDef>Stool</thingDef>
+        <styleDef>PAS_Corellian_Stool</styleDef>
+      </li>
+      <li>
+        <thingDef>Dresser</thingDef>
+        <styleDef>PAS_Corellian_Dresser</styleDef>
+      </li>
+      <li>
+        <thingDef>EndTable</thingDef>
+        <styleDef>PAS_Corellian_EndTable</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>PAS_Corellian_Table2x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Autodoor</thingDef>
+        <styleDef>PAS_Corellian_Autodoor</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>PAS_Coruscant</defName>
+    <label>coruscanti</label>
+    <fixedIdeoOnly>false</fixedIdeoOnly>
+    <thingDefStyles>
+      <li>
+        <thingDef>Bed</thingDef>
+        <styleDef>PAS_Coruscant_Bed</styleDef>
+      </li>
+      <li>
+        <thingDef>DoubleBed</thingDef>
+        <styleDef>PAS_Coruscant_DoubleBed</styleDef>
+      </li>
+      <li>
+        <thingDef>DiningChair</thingDef>
+        <styleDef>PAS_Coruscant_DiningChair</styleDef>
+      </li>
+      <li>
+        <thingDef>Stool</thingDef>
+        <styleDef>PAS_Coruscant_Stool</styleDef>
+      </li>
+      <li>
+        <thingDef>Dresser</thingDef>
+        <styleDef>PAS_Coruscant_Dresser</styleDef>
+      </li>
+      <li>
+        <thingDef>EndTable</thingDef>
+        <styleDef>PAS_Coruscant_EndTable</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>PAS_Coruscant_Table2x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Autodoor</thingDef>
+        <styleDef>PAS_Coruscant_Autodoor</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>PAS_Tatooine</defName>
+    <label>tatooinien</label>
+    <fixedIdeoOnly>false</fixedIdeoOnly>
+    <thingDefStyles>
+      <li>
+        <thingDef>Bed</thingDef>
+        <styleDef>PAS_Tatooine_Bed</styleDef>
+      </li>
+      <li>
+        <thingDef>DoubleBed</thingDef>
+        <styleDef>PAS_Tatooine_DoubleBed</styleDef>
+      </li>
+      <li>
+        <thingDef>DiningChair</thingDef>
+        <styleDef>PAS_Tatooine_DiningChair</styleDef>
+      </li>
+      <li>
+        <thingDef>Stool</thingDef>
+        <styleDef>PAS_Tatooine_Stool</styleDef>
+      </li>
+      <li>
+        <thingDef>Dresser</thingDef>
+        <styleDef>PAS_Tatooine_Dresser</styleDef>
+      </li>
+      <li>
+        <thingDef>EndTable</thingDef>
+        <styleDef>PAS_Tatooine_EndTable</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>PAS_Tatooine_Table2x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Autodoor</thingDef>
+        <styleDef>PAS_Tatooine_Autodoor</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_Bed</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/Corellian_Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_DoubleBed</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/Corellian_DoubleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.05,2.05)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_DiningChair</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/Corellian_DiningChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_Stool</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/Corellian_Stool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_Dresser</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/Corellian_Dresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_EndTable</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/Corellian_EndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2, 2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_Table2x2c</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/Corellian_TableLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.1, 2.2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Corellian_Autodoor</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Corellian/DoorCorellian</texPath>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_Bed</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/Coruscant_Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_DoubleBed</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/Coruscant_DoubleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.05,2.05)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_DiningChair</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/Coruscant_DiningChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_Stool</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/Coruscant_Stool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_Dresser</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/Coruscant_Dresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_EndTable</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/Coruscant_EndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2, 2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_Table2x2c</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/Coruscant_TableLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.1, 2.2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Coruscant_Autodoor</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Coruscant/DoorCoruscant</texPath>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_Bed</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/Tatooine_Bed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_DoubleBed</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/Tatooine_DoubleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.05,2.05)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_DiningChair</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/Tatooine_DiningChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_Stool</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/Tatooine_Stool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_Dresser</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/Tatooine_Dresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_EndTable</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/Tatooine_EndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2, 2</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_Table2x2c</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/Tatooine_TableLarge</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.1, 2.2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Tatooine_Autodoor</defName>
+    <graphicData>
+      <texPath>OuterRim/Building/Furniture/Tatooine/DoorTatooine</texPath>
+    </graphicData>
+  </ThingStyleDef>
+
+</Defs>

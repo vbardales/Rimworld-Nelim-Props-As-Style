@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<!-- Racine : About seul. Chaque ensemble est conditionne a son mod source. Sans lui, les
+		     `texPath` des styles pointeraient dans le vide et tu aurais des carres roses sur des
+		     apparences par ailleurs impossibles a selectionner. -->
+		<li IfModActive="neronix17.outerrim.furnitureanddecor">OuterRim</li>
+		<li IfModActive="ponpeco.pfkidsroom">PonpecoKids</li>
+		<li IfModActive="runnelatki.rabbieracemod">Rabbie</li>
+		<li IfModActive="sarg.alphapropsparks">AlphaProps</li>
+	</v1.6>
+</loadFolders>

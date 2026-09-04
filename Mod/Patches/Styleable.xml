@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Rend stylables les cibles vanilla qui ne le sont pas d'origine.
+
+       A LA RACINE, donc toujours charge : plusieurs ensembles visent les memes cibles, le patch
+       ne peut pas vivre dans le dossier conditionnel d'un seul mod source. Ajouter le composant
+       a une def vanilla ne coute rien meme si aucun style ne la vise.
+
+       CONTRE-INTUITIF, et verifie def par def : `CompProperties_Styleable` n'est PAS porte par
+       les bases abstraites. Ni FurnitureBase, ni FurnitureWithQualityBase, ni TableBase, ni
+       BedBase, ni BasicBedBase. Seul ShelfBase le fait, plus quelques defs concretes en propre -
+       PlantPot, StandingLamp, TorchLamp, DiningChair, Stool, Table2x2c, Autodoor, ShelfSmall,
+       BookcaseSmall - et les bases d'art.
+
+       Les neuf cibles ci-dessous ne l'ont pas et le recoivent.
+
+       MOTIF DEFENSIF, repris de « Ponpeco Furnitures : School Desk » : deux conditionnels par
+       cible. Le premier cree le noeud `comps` s'il n'existe pas, le second n'ajoute le composant
+       que s'il n'y est pas deja. Sans ca, un autre mod ayant deja ajoute des comps se
+       retrouverait avec un second noeud `comps` non fusionne, ou un doublon du composant.
+
+       NON REPRIS : `Wall`. Les murs utilisent un graphique lie (`Graphic_Linked`) qui se
+       raccorde a ses voisins ; une texture de style plate ne s'y substitue pas proprement. -->
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bed"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Bed"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bed"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Bed"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DoubleBed"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="DoubleBed"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="DoubleBed"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="DoubleBed"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Dresser"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Dresser"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Dresser"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Dresser"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EndTable"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EndTable"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="EndTable"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="EndTable"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bedroll"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Bedroll"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bedroll"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Bedroll"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RoyalBed"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RoyalBed"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="RoyalBed"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RoyalBed"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AnimalBed"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AnimalBed"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="AnimalBed"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AnimalBed"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Armchair"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Armchair"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Armchair"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Armchair"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Door"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Door"]</xpath>
+      <value><comps /></value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Door"]/comps/li[@Class="CompProperties_Styleable"]</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Door"]/comps</xpath>
+      <value><li Class="CompProperties_Styleable" /></value>
+    </nomatch>
+  </Operation>
+
+</Patch>

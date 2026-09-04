@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Styles tires de « Rabbie The Moonrabbit race » (Runne Latki).
+
+     Ce mod de race embarque un ensemble de mobilier complet, sans rapport avec la race
+     elle-meme. Sur ses 41 batiments, une vingtaine ont un jumeau vanilla de meme empreinte.
+
+     DEUX CATEGORIES, meme raison qu'ailleurs : le mod propose deux canapes, deux chaises, deux
+     tabourets, deux lampadaires, deux pots et deux bibliotheques.
+
+     NON REPRIS : les postes de production (etabli de couture, table d'usinage, raffinerie), le
+     portable qui est un `Building_WorkTable` et son imprimante-facility, les cartons de
+     stockage, la fenetre et l'applique qui sont muraux, et le mur - les murs utilisent un
+     graphique lie que le systeme de styles ne sait pas remplacer proprement. -->
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>PAS_Rabbie</defName>
+    <label>rabbie</label>
+    <fixedIdeoOnly>false</fixedIdeoOnly>
+    <thingDefStyles>
+      <li>
+        <thingDef>Bed</thingDef>
+        <styleDef>PAS_Rabbie_Bed</styleDef>
+      </li>
+      <li>
+        <thingDef>DoubleBed</thingDef>
+        <styleDef>PAS_Rabbie_DoubleBed</styleDef>
+      </li>
+      <li>
+        <thingDef>Armchair</thingDef>
+        <styleDef>PAS_Rabbie_Armchair</styleDef>
+      </li>
+      <li>
+        <thingDef>DiningChair</thingDef>
+        <styleDef>PAS_Rabbie_DiningChair</styleDef>
+      </li>
+      <li>
+        <thingDef>Stool</thingDef>
+        <styleDef>PAS_Rabbie_Stool</styleDef>
+      </li>
+      <li>
+        <thingDef>Dresser</thingDef>
+        <styleDef>PAS_Rabbie_Dresser</styleDef>
+      </li>
+      <li>
+        <thingDef>EndTable</thingDef>
+        <styleDef>PAS_Rabbie_EndTable</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>PAS_Rabbie_Table2x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Shelf</thingDef>
+        <styleDef>PAS_Rabbie_Shelf</styleDef>
+      </li>
+      <li>
+        <thingDef>StandingLamp</thingDef>
+        <styleDef>PAS_Rabbie_StandingLamp</styleDef>
+      </li>
+      <li>
+        <thingDef>PlantPot</thingDef>
+        <styleDef>PAS_Rabbie_PlantPot</styleDef>
+      </li>
+      <li>
+        <thingDef>BookcaseSmall</thingDef>
+        <styleDef>PAS_Rabbie_BookcaseSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Door</thingDef>
+        <styleDef>PAS_Rabbie_Door</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>PAS_RabbieB</defName>
+    <label>rabbie, variantes</label>
+    <fixedIdeoOnly>false</fixedIdeoOnly>
+    <thingDefStyles>
+      <li>
+        <thingDef>Armchair</thingDef>
+        <styleDef>PAS_RabbieB_Armchair</styleDef>
+      </li>
+      <li>
+        <thingDef>DiningChair</thingDef>
+        <styleDef>PAS_RabbieB_DiningChair</styleDef>
+      </li>
+      <li>
+        <thingDef>Stool</thingDef>
+        <styleDef>PAS_RabbieB_Stool</styleDef>
+      </li>
+      <li>
+        <thingDef>StandingLamp</thingDef>
+        <styleDef>PAS_RabbieB_StandingLamp</styleDef>
+      </li>
+      <li>
+        <thingDef>PlantPot</thingDef>
+        <styleDef>PAS_RabbieB_PlantPot</styleDef>
+      </li>
+      <li>
+        <thingDef>BookcaseSmall</thingDef>
+        <styleDef>PAS_RabbieB_BookcaseSmall</styleDef>
+      </li>
+      <li>
+        <thingDef>Door</thingDef>
+        <styleDef>PAS_RabbieB_Door</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_Bed</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Bed/SHS Bed Single</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.5,2.5)</drawSize>
+      <damageData>
+      <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_DoubleBed</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Bed/SHS Bed Double</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.5,2.5)</drawSize>
+      <damageData>
+      <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_Armchair</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Seatable/Sofa/SHS Sofa</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.7,1.7</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_DiningChair</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Seatable/SHS Dining Chair/RGB_SHS Dining Chair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.3,1.3</drawSize>
+      <shaderType>CutoutComplex</shaderType> <!--使贴图可以根据想要的部分受到原材料影响颜色。-->
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_Stool</defName>
+    <graphicData>
+      <texPath>Things/SuperSavings Home/Seatable/BIG Wobble Stool/BIG Wobble Stool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.5,1.5</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_Dresser</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Table/SHS Dresser/SHS Dresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.85,3.85)</drawSize>
+      <damageData>
+      <cornerTL>Damage/Corner</cornerTL>
+      <cornerTR>Damage/Corner</cornerTR>
+      <cornerBL>Damage/Corner</cornerBL>
+      <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_EndTable</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Table/SHS Dresser/SHS Bedside Table</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.82,1.82)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_Table2x2c</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Table/SHS board/SHS Dining Table 2x2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3.75,3.75)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+      <cornerTL>Damage/Corner</cornerTL>
+      <cornerTR>Damage/Corner</cornerTR>
+      <cornerBL>Damage/Corner</cornerBL>
+      <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_Shelf</defName>
+    <graphicData>
+      <texPath>Things/BrightCraft Stationery Co/Shelf/Item Shelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_StandingLamp</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Light/SHS Lamp/SHS Lamp Floor</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_PlantPot</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Planter/SHS flowerpot</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.4,1.4)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_BookcaseSmall</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Shelf/SHS BookCase</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawOffsetNorth>(0,0,-0.05)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,0.05)</drawOffsetSouth>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_Rabbie_Door</defName>
+    <graphicData>
+      <texPath>Things/SilverStar Engineering Co/Door/Apartment Door_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+      <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_RabbieB_Armchair</defName>
+    <graphicData>
+      <texPath>Things/SuperSavings Home/Seatable/Iron Tyrant Sofa/Iron Tyrant Sofa</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.3,1.3</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_RabbieB_DiningChair</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Seatable/SHS Dining Chair/SHS Dining Chair 2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.1,1.1</drawSize>
+      <shaderType>CutoutComplex</shaderType> <!--使贴图可以根据想要的部分受到原材料影响颜色。-->
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_RabbieB_Stool</defName>
+    <graphicData>
+      <texPath>Things/SuperSavings Home/Seatable/Little Wobble Stool/Little Wobble Stool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.5,1.5</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_RabbieB_StandingLamp</defName>
+    <graphicData>
+      <texPath>Things/SuperSavings Home/Light/Stingy Lamp/Floor/Stingy Lamp Floor</texPath>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_RabbieB_PlantPot</defName>
+    <graphicData>
+      <texPath>Things/SuperSavings Home/Planter/SuperSavings Foam Planter/SuperSavings Foam Planter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.8,1.8)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_RabbieB_BookcaseSmall</defName>
+    <graphicData>
+      <texPath>Things/Stellar Home Solutions/Shelf/Bookshelf</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.9,1.9)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_RabbieB_Door</defName>
+    <graphicData>
+      <texPath>Things/SilverStar Engineering Co/Door/Glass Door_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+      <enabled>false</enabled>
+      </damageData>
+      <drawSize>(1.05,1.05)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+</Defs>

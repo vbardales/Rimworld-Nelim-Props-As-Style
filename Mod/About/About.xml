@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Nelim's Props as Style</name>
+  <author>vbardales</author>
+  <packageId>nelim.propsasstyle</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Turns furniture and props from other mods into alternative appearances for the vanilla things you already build - as ideoligion styles when a whole themed set lines up, as random graphics when one vanilla thing has many variants.
+
+Nothing new to construct, no new architect entry, no new def of any building. A vanilla bed stays a vanilla bed - same stats, same cost, same behaviour - it just looks like something else, and you pick which at build time or at the styling station.
+
+Currently covered, when the source mod is present:
+- Outer Rim - Furniture and Decor: three categories, corellian, coruscant and tatooine, eight pieces each. Bed, double bed, dining chair, stool, dresser, end table, 2x2 table and autodoor.
+- Ponpeco Furnitures Kids' Room: two categories, sixteen styles. A full child's bedroom set, bedroll to royal bed.
+- Rabbie The Moonrabbit race: two categories, twenty styles. Beds, sofas, chairs, stools, dresser, nightstand, shelf, lamps, flower pot, bookcase and door.
+
+And as random graphics, needing Vanilla Expanded Framework:
+- Alpha Props - Parks and Gardens: fifteen extra looks for the vanilla plant pot, five for the standing lamp. The vanilla texture stays in the draw, always first.
+
+Each source is gated by LoadFolders, so a mod you do not have costs nothing and errors nothing.
+
+Nine vanilla targets are not styleable out of the box - Bed, DoubleBed, Dresser, EndTable, Bedroll, RoyalBed, AnimalBed, Armchair and Door - so the mod adds the component to them, defensively: it creates the comps node only if missing, and adds the component only if not already there.
+
+Needs Ideology for the style system itself. Style Change Anytime is recommended: without it a style category has to be attached to an ideoligion before you can use it.
+
+No save data of its own.</description>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Ideology</packageId>
+      <displayName>Ideology</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>neronix17.outerrim.furnitureanddecor</li>
+    <li>ponpeco.pfkidsroom</li>
+    <li>runnelatki.rabbieracemod</li>
+    <li>sarg.alphapropsparks</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>Dra.StyleChangeAnytime</li>
+  </loadAfter>
+</ModMetaData>

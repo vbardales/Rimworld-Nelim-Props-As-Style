@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Styles tires de « Ponpeco Furnitures : Kids' Room » (ponpeco).
+
+     Le mod livre un ensemble de chambre d'enfant complet, deja fonctionnel, et calque
+     empreinte par empreinte sur le vanilla. Quatre de ses defs portent meme deja
+     `CompProperties_Styleable` - le tabouret, la chaise, la chaise d'enfant et la guirlande :
+     l'auteur avait la meme intention.
+
+     DEUX CATEGORIES, parce qu'un thingDef ne recoit qu'un styleDef par categorie et que le mod
+     propose plusieurs variantes de la meme piece : deux lits, deux lits d'animal, deux chaises,
+     quatre lampes.
+
+     NON REPRIS : la table 1x1 (pas d'equivalent vanilla), la guirlande lumineuse et les deux
+     rideaux (muraux), les berceaux Biotech (fonctionnels et sans jumeau), et deux des quatre
+     lampes animales, faute d'une troisieme categorie qui se justifie. -->
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>PAS_PonpecoKids</defName>
+    <label>chambre d'enfant</label>
+    <fixedIdeoOnly>false</fixedIdeoOnly>
+    <thingDefStyles>
+      <li>
+        <thingDef>Bedroll</thingDef>
+        <styleDef>PAS_PonpecoKids_Bedroll</styleDef>
+      </li>
+      <li>
+        <thingDef>Bed</thingDef>
+        <styleDef>PAS_PonpecoKids_Bed</styleDef>
+      </li>
+      <li>
+        <thingDef>DoubleBed</thingDef>
+        <styleDef>PAS_PonpecoKids_DoubleBed</styleDef>
+      </li>
+      <li>
+        <thingDef>RoyalBed</thingDef>
+        <styleDef>PAS_PonpecoKids_RoyalBed</styleDef>
+      </li>
+      <li>
+        <thingDef>AnimalBed</thingDef>
+        <styleDef>PAS_PonpecoKids_AnimalBed</styleDef>
+      </li>
+      <li>
+        <thingDef>Stool</thingDef>
+        <styleDef>PAS_PonpecoKids_Stool</styleDef>
+      </li>
+      <li>
+        <thingDef>DiningChair</thingDef>
+        <styleDef>PAS_PonpecoKids_DiningChair</styleDef>
+      </li>
+      <li>
+        <thingDef>Armchair</thingDef>
+        <styleDef>PAS_PonpecoKids_Armchair</styleDef>
+      </li>
+      <li>
+        <thingDef>EndTable</thingDef>
+        <styleDef>PAS_PonpecoKids_EndTable</styleDef>
+      </li>
+      <li>
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>PAS_PonpecoKids_Table2x2c</styleDef>
+      </li>
+      <li>
+        <thingDef>Dresser</thingDef>
+        <styleDef>PAS_PonpecoKids_Dresser</styleDef>
+      </li>
+      <li>
+        <thingDef>StandingLamp</thingDef>
+        <styleDef>PAS_PonpecoKids_StandingLamp</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>PAS_PonpecoKidsB</defName>
+    <label>chambre d'enfant, variantes</label>
+    <fixedIdeoOnly>false</fixedIdeoOnly>
+    <thingDefStyles>
+      <li>
+        <thingDef>Bed</thingDef>
+        <styleDef>PAS_PonpecoKidsB_Bed</styleDef>
+      </li>
+      <li>
+        <thingDef>AnimalBed</thingDef>
+        <styleDef>PAS_PonpecoKidsB_AnimalBed</styleDef>
+      </li>
+      <li>
+        <thingDef>DiningChair</thingDef>
+        <styleDef>PAS_PonpecoKidsB_DiningChair</styleDef>
+      </li>
+      <li>
+        <thingDef>StandingLamp</thingDef>
+        <styleDef>PAS_PonpecoKidsB_StandingLamp</styleDef>
+      </li>
+    </thingDefStyles>
+  </StyleCategoryDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_Bedroll</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_Bedroll/PFK_Bedroll</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <renderQueue>2901</renderQueue>
+      <drawSize>(1,2)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_Bed</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_BedAa/PFK_BedAa</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+      <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+      <renderQueue>2901</renderQueue>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_DoubleBed</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_RoyalBed/PFK_RoyalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3)</drawSize>
+      <drawOffset>(0,0,0.4)</drawOffset>
+      <damageData>
+      <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_RoyalBed</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_RoyalBed/PFK_RoyalBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3)</drawSize>
+      <drawOffset>(0,0,0.4)</drawOffset>
+      <damageData>
+      <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+      <!-- <renderQueue>2950</renderQueue> -->
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_AnimalBed</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_AnimalBed/PFK_AnimalBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.1</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <renderQueue>2901</renderQueue>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_Stool</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_Stool/PFK_Stool</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(0.8)</drawSize>
+      <damageData>
+      <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+      <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+      <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+      <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+      <!--
+      <cornerTL>Damage/Corner</cornerTL>
+      <cornerTR>Damage/Corner</cornerTR>
+      <cornerBL>Damage/Corner</cornerBL>
+      <cornerBR>Damage/Corner</cornerBR>
+      -->
+      </damageData>
+      <shadowData>
+      <volume>(0.18, 0.23, 0.18)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_DiningChair</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_DiningChair/PFK_DiningChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <renderQueue>2901</renderQueue>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+      <rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+      <rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+      <rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+      <rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+      </damageData>
+      <shadowData>
+      <volume>(0.23, 0.26, 0.23)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_Armchair</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_Armchair/PFK_Armchair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <!--<shaderType>CutoutComplex</shaderType>-->
+      <drawSize>(1.3)</drawSize>
+      <damageData>
+      <rectN>(0,0,1,0.703125)</rectN>
+      <rectS>(0.09375,0,0.84375,1)</rectS>
+      <rectE>(0,0,0.84375,0.625)</rectE>
+      <rectW>(0.15625,0,0.84375,0.625)</rectW>
+      </damageData>
+      <shadowData>
+      <volume>(0.3, 0.33, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_EndTable</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_EndTable/PFK_EndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <renderQueue>2901</renderQueue>
+      <drawSize>1.3</drawSize>
+      <shadowData>
+      <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_Table2x2c</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_MiniTable/PFK_MiniTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.4)</drawSize>
+      <!--
+      <damageData>
+      <cornerTL>Damage/Corner</cornerTL>
+      <cornerTR>Damage/Corner</cornerTR>
+      <cornerBL>Damage/Corner</cornerBL>
+      <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      -->
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_Dresser</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_Dresser/PFK_Dresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <renderQueue>2901</renderQueue>
+      <drawSize>(2.1,2.1)</drawSize>
+      <drawOffsetNorth>(0,0,0.5)</drawOffsetNorth>
+      <drawOffsetSouth>(0,0,0.5)</drawOffsetSouth>
+      <drawOffsetWest>(0,0,0)</drawOffsetWest>
+      <drawOffsetEast>(0,0,0)</drawOffsetEast>
+      <damageData>
+      <cornerTL>Damage/Corner</cornerTL>
+      <cornerTR>Damage/Corner</cornerTR>
+      <cornerBL>Damage/Corner</cornerBL>
+      <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKids_StandingLamp</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_AnimalLamp/PFK_AnimalLampA</texPath>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKidsB_Bed</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_BedAb/PFK_BedAb</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+      <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+      <renderQueue>2901</renderQueue>
+      <!--            <drawOffsetNorth>(0,0,-0.2)</drawOffsetNorth>-->
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKidsB_AnimalBed</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_AnimalBed/PFK_AnimalBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <renderQueue>2901</renderQueue>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKidsB_DiningChair</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_ChildChair/PFK_ChildChair</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(0.8)</drawSize>
+      <damageData>
+      <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
+      <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
+      <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
+      <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
+      <cornerTL>Damage/Corner</cornerTL>
+      <cornerTR>Damage/Corner</cornerTR>
+      <cornerBL>Damage/Corner</cornerBL>
+      <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <shadowData>
+      <volume>(0.18, 0.23, 0.18)</volume>
+      </shadowData>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>PAS_PonpecoKidsB_StandingLamp</defName>
+    <graphicData>
+      <texPath>Things/Building/PFKFurniture/PFK_AnimalLamp/PFK_AnimalLampB</texPath>
+    </graphicData>
+  </ThingStyleDef>
+
+</Defs>

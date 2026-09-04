@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- Textures alternatives tirees de « Alpha Props - Parks and Gardens » (Sarg Bjornson).
+
+       AUTRE MECANIQUE QUE LES STYLES, et c'est arithmetique : quinze jardiniere visent toutes
+       PlantPot. En styles, ce serait quinze StyleCategoryDef - inutilisable. Le comp de VEF
+       tire au sort a la construction, sans limite de nombre et sans Ideology.
+
+       Le pot de fleurs vanilla reste le pot de fleurs vanilla : meme cout, meme fonction, il
+       fait toujours pousser une fleur. Il prend seize apparences au lieu d'une.
+
+       La texture vanilla est TOUJOURS la premiere entree, sinon elle disparaitrait du tirage.
+
+       DEUX LISTES AJOUTEES SEPAREMENT, jamais groupees. Lecon prise sur le patch de
+       « Ponpeco Furnitures : School Desk » : si un autre mod a deja complete randomGraphics et
+       optionalNames, un ajout groupe desynchroniserait les deux listes et chaque texture se
+       retrouverait avec le nom d'une autre. Chacune doit etre completee en fin de liste
+       independamment.
+
+       TROIS CIBLES ECARTEES apres verification :
+       - SculptureSmall pour les topiaires et les rochers : elle est deja en Graphic_Random sur
+         ses propres textures d'art, et chaque sculpture porte un nom et une description
+         d'oeuvre. Y greffer un second tirage casserait les deux.
+       - Barricade pour les bornes : c'est une texture LIEE (linkType Basic, linkFlags
+         Barricades) qui se raccorde a ses voisines. Une borne plate ne s'y substitue pas.
+       - Column pour les bornes : drawSize (0.5,1.25) et drawOffset propres a un pilier etroit.
+         Une borne trapue y serait etiree.
+
+       Deux des sept lampadaires sont aussi ecartes : VFEPD_AP_LamplightL et LamplightT sont en
+       Graphic_Multi, alors que StandingLamp est en Graphic_Single. -->
+
+  <!--=================== PlantPot : 15 apparences de plus ===================-->
+
+  <!-- UN SEUL conditionnel, deux branches exclusives. Si on creait le composant dans une
+       operation puis qu'on completait ses listes dans une autre, la seconde trouverait le
+       composant fraichement cree et ajouterait les memes entrees une deuxieme fois. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PlantPot"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]</xpath>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="PlantPot"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+          <value>
+              <li>Things/Building/ParkProps/Furniture/AP_PottedHibiscus</li>
+              <li>Things/Building/ParkProps/Furniture/AP_PottedRoses</li>
+              <li>Things/Building/ParkProps/Furniture/AP_PottedTulips</li>
+              <li>Things/Building/ParkProps/Planters/AP_RusticBucket</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_PlantPot</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_PlantPotSquare</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersA</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersB</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersC</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersD</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallLogsPlanter</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallStonePlanter</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallTilesPlanter</li>
+              <li>Things/Building/ParkProps/Planters/AP_FlatTilesWithGrassPlanter</li>
+              <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallWoodenPlanter</li>
+          </value>
+        </li>
+        <!-- optionalNames peut manquer si un autre mod a pose le composant sans noms.
+             Conditionnel sans nomatch : absent, on ne fait rien et on ne signale pas d'erreur. -->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PlantPot"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/optionalNames</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PlantPot"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/optionalNames</xpath>
+            <value>
+                  <li>Hibiscus jar</li>
+                  <li>Roses jar</li>
+                  <li>Tulips jar</li>
+                  <li>Rustic bucket</li>
+                  <li>Plant pot</li>
+                  <li>Square plant pot</li>
+                  <li>Small log planter A</li>
+                  <li>Small log planter B</li>
+                  <li>Small log planter C</li>
+                  <li>Small log planter D</li>
+                  <li>Small logs planter</li>
+                  <li>Small stone planter</li>
+                  <li>Small tile planter</li>
+                  <li>Flat tile planter</li>
+                  <li>Small wooden planter</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="PlantPot"]/comps</xpath>
+      <value>
+        <li Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+          <randomGraphics>
+                <li>Things/Building/Furniture/PlantPot</li>
+                <li>Things/Building/ParkProps/Furniture/AP_PottedHibiscus</li>
+                <li>Things/Building/ParkProps/Furniture/AP_PottedRoses</li>
+                <li>Things/Building/ParkProps/Furniture/AP_PottedTulips</li>
+                <li>Things/Building/ParkProps/Planters/AP_RusticBucket</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_PlantPot</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_PlantPotSquare</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersA</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersB</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersC</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallPlanterWithFakeFlowersD</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallLogsPlanter</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallStonePlanter</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallTilesPlanter</li>
+                <li>Things/Building/ParkProps/Planters/AP_FlatTilesWithGrassPlanter</li>
+                <li>Things/Building/ParkProps/Planters/VFEPD_AP_SmallWoodenPlanter</li>
+          </randomGraphics>
+          <optionalNames>
+                <li>Vanilla</li>
+                <li>Hibiscus jar</li>
+                <li>Roses jar</li>
+                <li>Tulips jar</li>
+                <li>Rustic bucket</li>
+                <li>Plant pot</li>
+                <li>Square plant pot</li>
+                <li>Small log planter A</li>
+                <li>Small log planter B</li>
+                <li>Small log planter C</li>
+                <li>Small log planter D</li>
+                <li>Small logs planter</li>
+                <li>Small stone planter</li>
+                <li>Small tile planter</li>
+                <li>Flat tile planter</li>
+                <li>Small wooden planter</li>
+          </optionalNames>
+        </li>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!--=================== StandingLamp : 5 apparences de plus ===================-->
+
+  <!-- UN SEUL conditionnel, deux branches exclusives. Si on creait le composant dans une
+       operation puis qu'on completait ses listes dans une autre, la seconde trouverait le
+       composant fraichement cree et ajouterait les memes entrees une deuxieme fois. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="StandingLamp"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]</xpath>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="StandingLamp"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/randomGraphics</xpath>
+          <value>
+              <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightA</li>
+              <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightB</li>
+              <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightC</li>
+              <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightD</li>
+              <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightE</li>
+          </value>
+        </li>
+        <!-- optionalNames peut manquer si un autre mod a pose le composant sans noms.
+             Conditionnel sans nomatch : absent, on ne fait rien et on ne signale pas d'erreur. -->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="StandingLamp"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/optionalNames</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="StandingLamp"]/comps/li[@Class="VEF.Buildings.CompProperties_RandomBuildingGraphic"]/optionalNames</xpath>
+            <value>
+                  <li>Street light A</li>
+                  <li>Street light B</li>
+                  <li>Street light C</li>
+                  <li>Street light D</li>
+                  <li>Street light E</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="StandingLamp"]/comps</xpath>
+      <value>
+        <li Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+          <randomGraphics>
+                <li>Things/Building/Furniture/LampStanding</li>
+                <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightA</li>
+                <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightB</li>
+                <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightC</li>
+                <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightD</li>
+                <li>Things/Building/ParkProps/Furniture/VFEPD_AP_LamplightE</li>
+          </randomGraphics>
+          <optionalNames>
+                <li>Vanilla</li>
+                <li>Street light A</li>
+                <li>Street light B</li>
+                <li>Street light C</li>
+                <li>Street light D</li>
+                <li>Street light E</li>
+          </optionalNames>
+        </li>
+      </value>
+    </nomatch>
+  </Operation>
+
+</Patch>
