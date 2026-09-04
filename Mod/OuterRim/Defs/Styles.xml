@@ -24,7 +24,7 @@
 
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>PAS_Corellian</defName>
-    <label>corellien</label>
+    <label>corellian</label>
     <fixedIdeoOnly>false</fixedIdeoOnly>
     <thingDefStyles>
       <li>
@@ -64,7 +64,7 @@
 
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>PAS_Coruscant</defName>
-    <label>coruscanti</label>
+    <label>coruscant</label>
     <fixedIdeoOnly>false</fixedIdeoOnly>
     <thingDefStyles>
       <li>
@@ -104,7 +104,7 @@
 
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>PAS_Tatooine</defName>
-    <label>tatooinien</label>
+    <label>tatooine</label>
     <fixedIdeoOnly>false</fixedIdeoOnly>
     <thingDefStyles>
       <li>

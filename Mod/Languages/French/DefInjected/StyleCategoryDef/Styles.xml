@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Les sept categories de style. Les libelles vanilla sont en minuscules
+       (rustic, spikecore, totemic) : on garde la meme forme. -->
+
+  <PAS_Corellian.label>corellien</PAS_Corellian.label>
+  <PAS_Coruscant.label>coruscanti</PAS_Coruscant.label>
+  <PAS_Tatooine.label>tatooinien</PAS_Tatooine.label>
+  <PAS_PonpecoKids.label>chambre d'enfant</PAS_PonpecoKids.label>
+  <PAS_PonpecoKidsB.label>chambre d'enfant, variantes</PAS_PonpecoKidsB.label>
+  <PAS_Rabbie.label>rabbie</PAS_Rabbie.label>
+  <PAS_RabbieB.label>rabbie, variantes</PAS_RabbieB.label>
+
+</LanguageData>

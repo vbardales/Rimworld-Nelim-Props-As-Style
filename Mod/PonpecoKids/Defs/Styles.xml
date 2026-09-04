@@ -18,7 +18,7 @@
 
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>PAS_PonpecoKids</defName>
-    <label>chambre d'enfant</label>
+    <label>children's room</label>
     <fixedIdeoOnly>false</fixedIdeoOnly>
     <thingDefStyles>
       <li>
@@ -74,7 +74,7 @@
 
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>PAS_PonpecoKidsB</defName>
-    <label>chambre d'enfant, variantes</label>
+    <label>children's room, variants</label>
     <fixedIdeoOnly>false</fixedIdeoOnly>
     <thingDefStyles>
       <li>

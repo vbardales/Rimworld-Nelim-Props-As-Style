@@ -76,7 +76,7 @@
 
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>PAS_RabbieB</defName>
-    <label>rabbie, variantes</label>
+    <label>rabbie, variants</label>
     <fixedIdeoOnly>false</fixedIdeoOnly>
     <thingDefStyles>
       <li>
