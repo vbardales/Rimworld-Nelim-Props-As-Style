@@ -42,6 +42,26 @@ only way to guarantee the style renders exactly like the original piece.
 - **Taken:** nothing. Twenty texture paths added to the draw of two vanilla defs, through
   `VEF.Buildings.CompProperties_RandomBuildingGraphic`.
 
+## Hallowen Monster Mash
+
+- **Author:** [KD] Killer_Diller
+- **Steam Workshop:** [2257175849](https://steamcommunity.com/sharedfiles/filedetails/?id=2257175849)
+- **Taken:** nothing. One `StyleCategoryDef` and four `ThingStyleDef`.
+- **A special case, and an instructive one.** This mod is dead: it declares 1.2 only, has no
+  `LoadFolders.xml`, and every def of it lives in a `1.2/` folder. In 1.6 RimWorld reads the
+  root only, so **not one of its defs ever loads**.
+
+  Its **textures**, however, sit at the root, so the game loads them normally. A `ThingStyleDef`
+  can therefore point at them and render, even though the original object no longer exists in
+  the game. All eleven paths were checked and resolve.
+
+  Which means the vanilla campfire can wear a cauldron, and the vanilla torch a lit
+  jack-o'-lantern, from a mod that otherwise does nothing at all. Nothing is copied or
+  extracted; you only need to be subscribed.
+
+  No licence is declared anywhere in the mod, and its Workshop page could not be read.
+
+
 ---
 
 ## Acknowledged debt

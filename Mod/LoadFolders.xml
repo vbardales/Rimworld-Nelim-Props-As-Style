@@ -9,5 +9,6 @@
 		<li IfModActive="ponpeco.pfkidsroom">PonpecoKids</li>
 		<li IfModActive="runnelatki.rabbieracemod">Rabbie</li>
 		<li IfModActive="sarg.alphapropsparks">AlphaProps</li>
+		<li IfModActive="kd.halloweenmonstermash">Halloween</li>
 	</v1.6>
 </loadFolders>
