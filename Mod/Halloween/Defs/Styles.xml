@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Styles tires de « Hallowen Monster Mash » ([KD] Killer_Diller).
+  <!-- Styles taken from "Hallowen Monster Mash" ([KD] Killer_Diller).
 
-       CAS PARTICULIER : CE MOD EST MORT, ET C'EST JUSTEMENT CE QUI REND LA MANOEUVRE POSSIBLE.
-       Il ne declare que la 1.2, n'a aucun LoadFolders.xml, et toutes ses defs vivent dans un
-       dossier `1.2/`. En 1.6 RimWorld ne lit que la racine : AUCUNE de ses defs ne se charge.
+       THE SOURCE HAS MOVED. These four styles used to read their textures straight out of the
+       Steam mod, which worked only because that mod is inert in 1.6: it declares no
+       LoadFolders.xml and keeps every def in a `1.2/` folder RimWorld never reads, while its
+       textures sit at the root and load normally. It rendered, and nothing was copied - but it
+       required a subscription to a mod dead since 2021.
 
-       Mais ses TEXTURES, elles, sont a la racine - `Textures/Decorations/...` - donc le jeu les
-       charge normalement. Un `ThingStyleDef` peut donc pointer dessus et rendre, alors meme que
-       l'objet d'origine n'existe plus dans la partie. Verifie : les onze chemins resolvent.
+       They now read from the 1.6 port instead, `nelim.halloweenmonstermash`, which ships all
+       eleven decoration textures including these four. That is what LoadFolders.xml is
+       conditioned on. The texPaths below are unchanged, because the port kept the author's
+       texture layout.
 
-       Rien n'est copie, rien n'est extrait. Il faut simplement etre abonne au mod.
+       FOUR STYLES ONLY, and one category is enough since they target four different vanilla defs.
 
-       QUATRE STYLES SEULEMENT, et une seule categorie suffit puisqu'ils visent quatre defs
-       vanilla differentes.
+       THE OTHER SEVEN DECORATIONS - spider, ghosts, bats, skeleton, reaper, haunted tree, unlit
+       pumpkin - are not styles and were never going to be: none has a vanilla twin. They are
+       buildings in the port, where they belong. Do not add them here.
 
-       NON REPRIS - les sept autres decorations : araignee, fantomes, chauves-souris, squelette,
-       faucheuse, arbre hante, citrouille eteinte. Aucune n'a de jumeau vanilla, et ce sont les
-       props les plus purs du corpus : `Beauty 1`, aucun cout, aucun materiau, aucun composant.
-       Rien d'autre qu'une image.
-
-       A NOTER SUR LES DEUX LUMIERES : dans le mod d'origine, la citrouille allumee et la bougie
-       sont de vrais batiments - Refuelable, Glower de rayon 10, HeatPusher, et meme un focus de
-       meditation. En style, tout cela disparait : c'est la torche vanilla et le brasero vanilla
-       qui gardent leur comportement, seule l'apparence change. C'est le principe, et ici il
-       tombe bien : la torche est deja refuelable et eclairante. -->
+       ON THE TWO LIGHTS: in the source mod the lit jack-o-lantern and the candle are real
+       buildings - Refuelable, a Glower of radius 10, a HeatPusher, even a meditation focus. As
+       styles all of that is gone: the vanilla torch and brazier underneath keep their behaviour
+       and only the appearance changes. That is the principle, and here it lands well - a torch
+       lamp is already refuellable and already lights a room. The port deliberately does not
+       rebuild those two as buildings, so the two mods never offer the same object twice. -->
 
   <StyleCategoryDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>PAS_Halloween</defName>

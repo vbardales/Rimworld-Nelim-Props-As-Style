@@ -9,6 +9,8 @@
 		<li IfModActive="ponpeco.pfkidsroom">PonpecoKids</li>
 		<li IfModActive="runnelatki.rabbieracemod">Rabbie</li>
 		<li IfModActive="sarg.alphapropsparks">AlphaProps</li>
-		<li IfModActive="kd.halloweenmonstermash">Halloween</li>
+		<!-- The 1.6 port, no longer the original `kd.halloweenmonstermash`: that one is inert in
+		     1.6 (its defs sit in a `1.2/` folder) and the port now ships the textures itself. -->
+		<li IfModActive="nelim.halloweenmonstermash">Halloween</li>
 	</v1.6>
 </loadFolders>
