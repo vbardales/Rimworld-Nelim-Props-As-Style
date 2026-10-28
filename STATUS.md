@@ -5,7 +5,7 @@ repo: Rimworld-Nelim-Props-As-Style
 remote: https://github.com/vbardales/Rimworld-Nelim-Props-As-Style.git
 visibility: public
 detached: yes
-workflow_stage: makeSources
+workflow_stage: code[1.0.0]
 licence: open
 licence_at: "2026-10-28: MIT (LICENSE), nothing of anyone else shipped; Chinese textures removed, source mods only pointed at"
 upstream_mod_remotes: N/A
@@ -22,10 +22,9 @@ remaining:
   - "2026-10-28: defect: public release needs a clean history (local main holds the Chinese textures in 718fc69); origin/main has unrelated history, 8 commits"
   - "2026-10-28: unverified: licence of the Halloween source mod and of each source mod for public release"
   - "2026-10-28: defect: Mod/About/PublishedFileId.txt holds 3811383287 while workshop is none: clarify before any publication"
-  - "2026-10-28: unverified: protocols changed since protocols_read_sha (AGENTS.md, docs/AUDIT-STATUS.md, scripts/LOCAL_SCRIPTS.md): re-read before the next stage change"
-  - "2026-10-28: unverified: 2.a to 2.f makeSources sub-steps not yet replayed (icon source, derivatives, preview source)"
-protocols_read_sha: 67838c25a6ef98a6bfc300da66b6b496eff10099
-updated: 2026-10-28
+  - "2026-10-29: defect: Tests/Test-Chinese.ps1 has no justified row in scripts/LOCAL_SCRIPTS.md (Audit arbitrates, declare-local-script)"
+protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
+updated: 2026-10-29
 ---
 
 # Props as Style: status
