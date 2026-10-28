@@ -1,0 +1,583 @@
+{
+  "license": "forbidden",
+  "privateOnly": true,
+  "assets": [
+    {
+      "sha256": "EFACD60F5FBCBDD088D845001A5F4B529AB7601C3CD7C1AD1E3478479B6503F5",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_east.dds",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_east.dds"
+    },
+    {
+      "sha256": "F2BAFF8BCB9BA7150F4761653955CB32843F9AC91BC6ADD81DD6018A0D6599BD",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_east.png",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_east.png"
+    },
+    {
+      "sha256": "83C06A36563612CDC976435CF72B1A82780795EA37D033BE5932CBFBE465BB87",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_eastm.dds",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_eastm.dds"
+    },
+    {
+      "sha256": "EE146443C739CBE998E7A7672C996C6710269D159F2893BACB0E9D569BFB2347",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_eastm.png",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_eastm.png"
+    },
+    {
+      "sha256": "127355019A30F9578046FA71AB12398B744C936E81CBDE1F339C53011B76928C",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_north.dds",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_north.dds"
+    },
+    {
+      "sha256": "7692C86E2D001ADBC6A476CD41E2CC7E8459AB1006FD0A14D76A53969B3678CA",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_north.png",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_north.png"
+    },
+    {
+      "sha256": "48880E83BA34F6482253A63B4AFAE352BA165B3EAEE20642B1F40C6DA0995296",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_northm.dds",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_northm.dds"
+    },
+    {
+      "sha256": "7607CBE07546FCAA5D0C985D0622F2893447DFFBAE662D75B18D6328A6DA7A72",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_northm.png",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_northm.png"
+    },
+    {
+      "sha256": "6B9FB982F20D091E6B6A079F71D3D9D6372419699741325DCD106BCFA78F3DC7",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_south.dds",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_south.dds"
+    },
+    {
+      "sha256": "4D40EB45AEB0615138219A518F5A23C55E0B07BD8CA763BAABB9C3818F87BFF5",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_south.png",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_south.png"
+    },
+    {
+      "sha256": "A8C1D185405C6E524FDF6EE5FB2A33F4F0E9BE6AC500BDAD4F9B647D47C1D588",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_southm.dds",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_southm.dds"
+    },
+    {
+      "sha256": "6E13E9F8AED0E8FC494B3356AC2B524C1E099E9B6919A13C10C468E0803DBFDE",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ChuangTouGui/ChuangTouGui_southm.png",
+      "source": "Textures/JiaJu/ChuangTouGui/ChuangTouGui_southm.png"
+    },
+    {
+      "sha256": "2E9FD652848B89BCF207DD2A855BB707394B85441E48E57D74C5602D7D777D1C",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_east.dds",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_east.dds"
+    },
+    {
+      "sha256": "ADBB657DB006F17AE6AF8864B67A68660DE021A64C816E8A0F885D349379455B",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_east.png",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_east.png"
+    },
+    {
+      "sha256": "EFC0071030FBD86FB61106B85A4C21212AC61946F6FFEB3E097BA11968A7B22F",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_eastm.dds",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_eastm.dds"
+    },
+    {
+      "sha256": "719D8642C5D84BE340F19B47A90A2C9428E8067565C7439862A7393D75D5460E",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_eastm.png",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_eastm.png"
+    },
+    {
+      "sha256": "54F2F8A1905F2826F4C6EE9C1812A1CCF5DEFCCE9090E9D1729ED7579CF0E388",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_north.dds",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_north.dds"
+    },
+    {
+      "sha256": "56204E946C2C5C556A143ABEF5F56ED6C57BFE541887D023DC132461A3E1614E",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_north.png",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_north.png"
+    },
+    {
+      "sha256": "12BE34599D2E2F34A79951837EB801B22BEE0280337F3ADB37AF5A27C68DCAAB",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_northm.dds",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_northm.dds"
+    },
+    {
+      "sha256": "2429D5534691B5E6E775933CEB4AABAFC270D4DCC4F878B73572C4CF02A869A0",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_northm.png",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_northm.png"
+    },
+    {
+      "sha256": "808E76F12503D794FDC7606321A16A157F189CCEC897E1C69C15C26B140744CD",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_south.dds",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_south.dds"
+    },
+    {
+      "sha256": "EA40A4A5D1035F56A10E1B350E6728B49724C9434E93CCF9C5F6963393D81285",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_south.png",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_south.png"
+    },
+    {
+      "sha256": "EAB5DE2C31DE079FD305349813E7F116C2B768C6571FBE5CBAA40D41CDD4286D",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_southm.dds",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_southm.dds"
+    },
+    {
+      "sha256": "454BC95B855C49605F8175A28A4B24F14E63F0E450824D5CB6D2A707EE59A714",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_southm.png",
+      "source": "Textures/JiaJu/ShuZhuangTai/ShuZhuangTai_southm.png"
+    },
+    {
+      "sha256": "9C31028BDCD032DF335C97A5B4928F1DF490651E4C80E2FAB0DC340573A927FA",
+      "destination": "Mod/ChinesePrivate/Textures/Buildings/TengYi/TengYiShort_east.dds",
+      "source": "Textures/Buildings/TengYi/TengYiShort_east.dds"
+    },
+    {
+      "sha256": "DB0F988D8CC5BA9F37C421C9330F22446E410D12C79C93CB96423E7B2F9A1E28",
+      "destination": "Mod/ChinesePrivate/Textures/Buildings/TengYi/TengYiShort_east.png",
+      "source": "Textures/Buildings/TengYi/TengYiShort_east.png"
+    },
+    {
+      "sha256": "A476797EC420C56ADB0657D86E2037AC3D9876F5BB4C23BDB976EFDA4AD098C9",
+      "destination": "Mod/ChinesePrivate/Textures/Buildings/TengYi/TengYiShort_north.dds",
+      "source": "Textures/Buildings/TengYi/TengYiShort_north.dds"
+    },
+    {
+      "sha256": "33DB1659C55FC04230B36C5FAE9659EAD0A0D433F65349A6E117E23A61F7D7D2",
+      "destination": "Mod/ChinesePrivate/Textures/Buildings/TengYi/TengYiShort_north.png",
+      "source": "Textures/Buildings/TengYi/TengYiShort_north.png"
+    },
+    {
+      "sha256": "24FFD0A38AB3740B4D42A1A9F430F1AE5DA32D95D93ABD680262211EEFD97A4C",
+      "destination": "Mod/ChinesePrivate/Textures/Buildings/TengYi/TengYiShort_south.dds",
+      "source": "Textures/Buildings/TengYi/TengYiShort_south.dds"
+    },
+    {
+      "sha256": "115FD1458640215DB56BEE58ACE09286D7730D678E861D43F46AA28FAE81C128",
+      "destination": "Mod/ChinesePrivate/Textures/Buildings/TengYi/TengYiShort_south.png",
+      "source": "Textures/Buildings/TengYi/TengYiShort_south.png"
+    },
+    {
+      "sha256": "341BC8FE780F959274EBDEE221A509E50B5AC617AE4333B9723C18D774AC028E",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ZhuoZiB/ZhuoZiB.dds",
+      "source": "Textures/JiaJu/ZhuoZiB/ZhuoZiB.dds"
+    },
+    {
+      "sha256": "981466BCE84125B225203A0B379048CCA7A2D45C14D29DFC5B33DA248E184ED0",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ZhuoZiB/ZhuoZiB.png",
+      "source": "Textures/JiaJu/ZhuoZiB/ZhuoZiB.png"
+    },
+    {
+      "sha256": "2F0C646535525D12A79CAAA329E5E37849F75E21830F5062F01138487E2F827A",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ZhuoZiC/ZhuoZiC.dds",
+      "source": "Textures/JiaJu/ZhuoZiC/ZhuoZiC.dds"
+    },
+    {
+      "sha256": "1636AA8D09B7CC46A111B48507321EF713AE536D6D2058D0D368361F98E9AFE5",
+      "destination": "Mod/ChinesePrivate/Textures/JiaJu/ZhuoZiC/ZhuoZiC.png",
+      "source": "Textures/JiaJu/ZhuoZiC/ZhuoZiC.png"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceDefName": "Chi_DaoCaoRen",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_GaoShiPai",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_Gu",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_HuaBiaoA",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml"
+    },
+    {
+      "sourceDefName": "Chi_HuaBiaoAA",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml"
+    },
+    {
+      "sourceDefName": "Chi_HuaBiaoB",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml"
+    },
+    {
+      "sourceDefName": "Chi_JiaShan_A",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_JiaShan_B",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_LianOuPenJing",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_New_AiCao",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "Chi_New_LaJiaoChuan",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "Chi_New_WuCaiZong",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "Chi_New_YuMiChuan",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "Chi_PenJing",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_Pingfeng",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\JinShuHeTaoCi\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_QingHuaCiA",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\JinShuHeTaoCi\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_QiZhi",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_ShuiJing",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "Chi_XiangLu",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "ChiTableB",
+      "reason": "Source footprint (2,1), vanilla Table1x2c (1,2): orientation mismatch",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "ChiTableE",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "ChiTableSA",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "DengLong_Blue",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "DengLong_Red",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "DengLong_White",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "DengLong_Yellow",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "MaJiangYi",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZ_DianLiKangA",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml"
+    },
+    {
+      "sourceDefName": "SZ_DianLiKangB",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml"
+    },
+    {
+      "sourceDefName": "SZ_FoXiang",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZ_HuoPen",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_Aug.Update.xml"
+    },
+    {
+      "sourceDefName": "SZ_LongSofa",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZ_LuoHanChuangYi",
+      "reason": "Requires upstream layered renderer; cannot preserve appearance with a single style",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml"
+    },
+    {
+      "sourceDefName": "SZ_QingHuaCiJia",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\202310Update.xml"
+    },
+    {
+      "sourceDefName": "SZ_RanLiaoKangA",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml"
+    },
+    {
+      "sourceDefName": "SZ_RanLiaoKangB",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml"
+    },
+    {
+      "sourceDefName": "SZ_ShuiChi",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZ_ShuiChi_B",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZ_ShuJia",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_LinkJiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZ_ShuZhuangJing",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_ShuZhuangJing.xml"
+    },
+    {
+      "sourceDefName": "SZ_Un_QingCi",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\JinShuHeTaoCi\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZ_YuanBaoChair",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_Aug.Update.xml"
+    },
+    {
+      "sourceDefName": "SZ_ZhuangShiShuJia",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZFuRug_A",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "SZFuRug_B",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "SZFuRug_C",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "SZFuRug_D",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\NewMod.xml"
+    },
+    {
+      "sourceDefName": "SZRug_Er",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "SZRug_San",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Oct_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "XiangQiTable",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml"
+    },
+    {
+      "sourceDefName": "ZhongHuaJiaJu_Chuang",
+      "reason": "Requires upstream layered renderer; cannot preserve appearance with a single style",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml"
+    },
+    {
+      "sourceDefName": "ZhuanZhuo",
+      "reason": "Outside selected vanilla set; ownership deferred to coordinating furniture tasks",
+      "decision": "excluded",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_ChuangHeZhuo.xml"
+    }
+  ],
+  "sourceLoadRoots": [
+    "/",
+    "1.5"
+  ],
+  "sourcePackageId": "Dajian.ChiTeaditional.Expanded",
+  "retained": [
+    {
+      "sourceDefName": "EndTableSZ_ChuangTouGui_New",
+      "behavior": "Vanilla costs, stats and facilities only; upstream bonuses removed",
+      "vanillaTarget": "EndTable",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_LinkJiaJu.xml",
+      "owner": "PropsAsStyle",
+      "destinationType": "ThingStyleDef",
+      "sourceSize": "(1,1)",
+      "texPath": "JiaJu/ChuangTouGui/ChuangTouGui",
+      "destinationDefName": "EndTableSZ_ChuangTouGui_New",
+      "sourceType": "ThingDef",
+      "decision": "style-only",
+      "dependencies": [
+        "Core",
+        "Ideology"
+      ]
+    },
+    {
+      "sourceDefName": "SZ_ShuZhuangTai",
+      "behavior": "Vanilla costs, stats and facilities only; upstream bonuses removed",
+      "vanillaTarget": "Dresser",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_LinkJiaJu.xml",
+      "owner": "PropsAsStyle",
+      "destinationType": "ThingStyleDef",
+      "sourceSize": "(2,1)",
+      "texPath": "JiaJu/ShuZhuangTai/ShuZhuangTai",
+      "destinationDefName": "SZ_ShuZhuangTai",
+      "sourceType": "ThingDef",
+      "decision": "style-only",
+      "dependencies": [
+        "Core",
+        "Ideology"
+      ]
+    },
+    {
+      "sourceDefName": "MaJiangYi_Short",
+      "behavior": "Vanilla costs, stats and facilities only; upstream bonuses removed",
+      "vanillaTarget": "DiningChair",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "owner": "PropsAsStyle",
+      "destinationType": "ThingStyleDef",
+      "sourceSize": "(1,1)",
+      "texPath": "Buildings/TengYi/TengYiShort",
+      "destinationDefName": "MaJiangYi_Short",
+      "sourceType": "ThingDef",
+      "decision": "style-only",
+      "dependencies": [
+        "Core",
+        "Ideology"
+      ]
+    },
+    {
+      "sourceDefName": "ChiTableC",
+      "behavior": "Vanilla costs, stats and facilities only; upstream bonuses removed",
+      "vanillaTarget": "Table2x2c",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "owner": "PropsAsStyle",
+      "destinationType": "ThingStyleDef",
+      "sourceSize": "(2,2)",
+      "texPath": "JiaJu/ZhuoZiB/ZhuoZiB",
+      "destinationDefName": "ChiTableC",
+      "sourceType": "ThingDef",
+      "decision": "style-only",
+      "dependencies": [
+        "Core",
+        "Ideology"
+      ]
+    },
+    {
+      "sourceDefName": "ChiTableD",
+      "behavior": "Vanilla costs, stats and facilities only; upstream bonuses removed",
+      "vanillaTarget": "Table3x3c",
+      "sourceFile": "1.5\\Defs\\ThingDefs\\Buildings_JiaJu\\Buildings_JiaJu.xml",
+      "owner": "PropsAsStyle",
+      "destinationType": "ThingStyleDef",
+      "sourceSize": "(3,3)",
+      "texPath": "JiaJu/ZhuoZiC/ZhuoZiC",
+      "destinationDefName": "ChiTableD",
+      "sourceType": "ThingDef",
+      "decision": "style-only",
+      "dependencies": [
+        "Core",
+        "Ideology"
+      ]
+    }
+  ],
+  "sourceWorkshopId": "2877536640"
+}

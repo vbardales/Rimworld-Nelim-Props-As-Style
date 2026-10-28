@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "evidence": "About/About.xml lines 17-24",
+      "license": "forbidden",
+      "privateOnly": true,
+      "authors": "Diamond.J,DaJian(has exited),Frolg,TangWan,XF,etc.",
+      "name": "Chinese Traditional Cultural Things Expanded",
+      "workshopId": "2877536640",
+      "manifest": "CHINESE_MANIFEST.json",
+      "content": "5 ThingStyleDef, 1 StyleCategoryDef, selected textures; no upstream ThingDef or assembly"
+    }
+  ]
+}

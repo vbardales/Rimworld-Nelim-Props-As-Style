@@ -24,7 +24,7 @@ remaining:
   - "2026-10-28: defect: Mod/About/PublishedFileId.txt holds 3811383287 while workshop is none: clarify before any publication"
   - "2026-10-28: unverified: protocols changed since protocols_read_sha (AGENTS.md, docs/AUDIT-STATUS.md, scripts/LOCAL_SCRIPTS.md): re-read before the next stage change"
   - "2026-10-28: unverified: 2.a to 2.f makeSources sub-steps not yet replayed (icon source, derivatives, preview source)"
-protocols_read_sha: 7a1282c60cc188fb02a1bfaceec231e0f8d53669
+protocols_read_sha: 67838c25a6ef98a6bfc300da66b6b496eff10099
 updated: 2026-10-28
 ---
 

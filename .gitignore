@@ -1,5 +1,5 @@
 # Ce mod ne contient aucun code : rien a compiler, rien d'intermediaire.
-.build/
+Build/
 
 # Environnements de developpement
 .vs/
