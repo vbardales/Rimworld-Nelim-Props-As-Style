@@ -21,6 +21,8 @@ remaining:
   - "2026-10-28: unverified: never seen running; upstream Chinese mod has no v1.6 LoadFolders entry, texture and defName behaviour in 1.6 unknown"
   - "2026-10-28: defect: public release needs a clean history (local main holds the Chinese textures in 718fc69); origin/main has unrelated history, 8 commits"
   - "2026-10-28: unverified: licence of the Halloween source mod and of each source mod for public release"
+  - "2026-10-28: defect: Mod/About/PublishedFileId.txt holds 3811383287 while workshop is none: clarify before any publication"
+  - "2026-10-28: unverified: protocols changed since protocols_read_sha (AGENTS.md, docs/AUDIT-STATUS.md, scripts/LOCAL_SCRIPTS.md): re-read before the next stage change"
   - "2026-10-28: unverified: 2.a to 2.f makeSources sub-steps not yet replayed (icon source, derivatives, preview source)"
 protocols_read_sha: 7a1282c60cc188fb02a1bfaceec231e0f8d53669
 updated: 2026-10-28
