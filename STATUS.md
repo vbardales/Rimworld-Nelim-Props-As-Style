@@ -5,7 +5,7 @@ repo: Rimworld-Nelim-Props-As-Style
 remote: https://github.com/vbardales/Rimworld-Nelim-Props-As-Style.git
 visibility: public
 detached: yes
-workflow_stage: declareDependencies[1.0.0]
+workflow_stage: settings[1.0.0]
 licence: open
 licence_at: "2026-10-28: MIT (LICENSE), nothing of anyone else shipped; Chinese textures removed, source mods only pointed at"
 upstream_mod_remotes: N/A
