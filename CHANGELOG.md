@@ -35,3 +35,6 @@ Neuf cibles ne sont pas stylables d'origine : `Bed`, `DoubleBed`, `Dresser`, `En
 abstraite vanilla ne le porte : ni `FurnitureBase`, ni `TableBase`, ni `BedBase`.
 
 `Wall` est écarté : les murs utilisent un `Graphic_Linked` qui se raccorde aux voisins.
+
+## 2026-09-12 — private Chinese extraction
+Five styles and 34 original texture files, gated by Ideology; source-name preservation, private attribution, source/asset manifest, defensive styleability patches and offline regression checks. No original ThingDef or assembly; no publication. See TEST_SCENARIOS.md and STATUS.md.

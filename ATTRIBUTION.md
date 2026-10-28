@@ -74,3 +74,9 @@ The same mod taught this project that `randomGraphics` and `optionalNames` must 
 in a single grouped operation.
 
 Not a line is copied from it; it is the method that is borrowed.
+
+## Chinese Traditional Cultural Things Expanded
+
+- **Credits (its About):** Diamond.J, DaJian (has exited), Frolg, TangWan, XF and others.
+- **Steam Workshop:** [2877536640](https://steamcommunity.com/sharedfiles/filedetails/?id=2877536640), package id `Dajian.ChiTeaditional.Expanded`.
+- **Taken:** nothing. One `StyleCategoryDef` and five `ThingStyleDef` pointing at its textures, loaded only when it is active. Its About refuses redistribution of its files; none is shipped, so nothing of it is copied. Five of its def names are kept as style names.

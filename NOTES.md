@@ -64,3 +64,13 @@ Deux dépôts, pas un :
 - `Rimworld-Nelim-Props-As-Style`
 
 Les deux portent la même image ; seul le `<name>` de l'About diffère.
+
+## Private Chinese extraction — 2026-09-12
+
+This local build now contains selected third-party textures, unlike the earlier reference-only sets described above. Chinese Traditional Cultural Things Expanded, Workshop 2877536640, credits Diamond.J, DaJian (has exited), Frolg, TangWan, XF, etc. Classification: **forbidden**, based on upstream About/About.xml lines 17–24. Welcoming patches does not authorize republication. Keep this build private; the project MIT licence does not apply to these assets. No push or publication was performed.
+
+Five original names are preserved as ThingStyleDef names (not ThingDefs): EndTableSZ_ChuangTouGui_New, SZ_ShuZhuangTai, MaJiangYi_Short, ChiTableC, ChiTableD. One coherent category covers bedside furniture, seating and square dining tables. Their occupied cells match EndTable (1x1), Dresser (2x1), DiningChair (1x1), Table2x2c (2x2), Table3x3c (3x3). Source graphicData is preserved; oversize drawSize includes transparent margins and is not occupied size. Vanilla costs, bonuses, material rules and behavior remain in force. Source lantern connections, extra beauty and rest bonuses are not imported.
+
+No original ThingDef, research, recipe, assembly or C# was imported. Core + Ideology suffice for this branch. No AnimalArk/soie or furniture dependency is introduced. Other pre-existing optional branches retain their own requirements. CHINESE_MANIFEST.json records retained/excluded furniture and every asset hash; SOURCES.json indexes this private extraction. Exclusions outside the furniture audit (animals, plants, food, apparel, weapons, storytellers, terrain, medical systems) remain entirely outside this branch.
+
+Both layered beds are excluded; ChiTableB is excluded because (2,1) is not vanilla Table1x2c's (1,2). Other furniture is left to neighboring tasks, not silently imported. A style is not an automatic save migration from an original Chinese building.

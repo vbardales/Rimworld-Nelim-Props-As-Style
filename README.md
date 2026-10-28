@@ -143,3 +143,9 @@ otherwise you would get pink squares on appearances you cannot select anyway.
 ## License and attribution
 
 MIT. The mod contains no file belonging to anyone else; see [ATTRIBUTION.md](ATTRIBUTION.md).
+
+## Chinese Traditional Cultural Things Expanded (optional)
+
+Five styles in one category, "Chinese traditional": `EndTable`, `Dresser`, `DiningChair`, `Table2x2c` and `Table3x3c`. Occupied cells match the vanilla targets; source `drawSize` is kept because it includes transparent margins. Costs, bonuses, materials and behaviour stay vanilla. Lantern connections and extra beauty or rest bonuses of the source are not imported.
+
+The mod ships **no texture** of it: the styles point at the textures of [Chinese Traditional Cultural Things Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2877536640) (`Dajian.ChiTeaditional.Expanded`) and load only when it is active. Both layered beds and the rectangular table are left out: the footprints do not match a vanilla target.
