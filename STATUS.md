@@ -3,7 +3,7 @@ mod: Props as Style
 packageId: nelim.propsasstyle
 repo: Rimworld-Nelim-Props-As-Style
 remote: https://github.com/vbardales/Rimworld-Nelim-Props-As-Style.git
-visibility: private
+visibility: public
 detached: yes
 workflow_stage: makeSources
 licence: open
