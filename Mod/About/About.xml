@@ -14,7 +14,7 @@ Currently covered, when the source mod is present:
 - Outer Rim - Furniture and Decor: three categories, corellian, coruscant and tatooine, eight pieces each. Bed, double bed, dining chair, stool, dresser, end table, 2x2 table and autodoor.
 - Ponpeco Furnitures Kids' Room: two categories, sixteen styles. A full child's bedroom set, bedroll to royal bed.
 - Rabbie The Moonrabbit race: two categories, twenty styles. Beds, sofas, chairs, stools, dresser, nightstand, shelf, lamps, flower pot, bookcase and door.
-
+- Halloween Monster Mash Renew (unofficial port): one category, four styles, taken from its decorations.
 - Chinese Traditional Cultural Things Expanded: one category, five styles. Bedside table, dresser, dining chair, 2x2 and 3x3 tables.
 
 And as random graphics, needing Vanilla Expanded Framework:
@@ -40,6 +40,7 @@ No save data of its own.</description>
     <li>ponpeco.pfkidsroom</li>
     <li>runnelatki.rabbieracemod</li>
     <li>sarg.alphapropsparks</li>
+    <li>nelim.halloweenmonstermash</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
     <li>Dra.StyleChangeAnytime</li>
     <li>Dajian.ChiTeaditional.Expanded</li>

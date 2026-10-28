@@ -9,7 +9,7 @@
        textures sit at the root and load normally. It rendered, and nothing was copied - but it
        required a subscription to a mod dead since 2021.
 
-       They now read from the 1.6 port instead, `nelim.halloweenmonstermashrenew`, which ships all
+       They now read from the 1.6 port instead, `nelim.halloweenmonstermash`, which ships all
        eleven decoration textures including these four. That is what LoadFolders.xml is
        conditioned on. The texPaths below are unchanged, because the port kept the author's
        texture layout.
