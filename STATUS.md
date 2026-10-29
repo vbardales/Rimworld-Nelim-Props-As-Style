@@ -5,7 +5,7 @@ repo: Rimworld-Nelim-Props-As-Style
 remote: https://github.com/vbardales/Rimworld-Nelim-Props-As-Style.git
 visibility: public
 detached: yes
-workflow_stage: localize[1.0.0]
+workflow_stage: writeTests[1.0.0]
 licence: open
 licence_at: "2026-10-28: MIT (LICENSE), nothing of anyone else shipped; Chinese textures removed, source mods only pointed at"
 upstream_mod_remotes: N/A
@@ -25,7 +25,7 @@ remaining:
   - "2026-10-29: defect: Tests/Test-Chinese.ps1 has no justified row in scripts/LOCAL_SCRIPTS.md (Audit arbitrates, declare-local-script)"
   - "2026-10-29: unverified: settings_audit not_applicable checked in sources only; absence of a Mod options entry and of a MainButtons shortcut not seen in game (playTests)"
   - "2026-10-29: unverified: translated labels not seen in game (no raw key, no fallback, no clipping in the style picker); playTests"
-protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
+protocols_read_sha: 0de1645871c6a385f04273c57529a088baf6d391
 updated: 2026-10-29
 ---
 
