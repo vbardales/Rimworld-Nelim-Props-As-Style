@@ -1,0 +1,5 @@
+# Outer-Rim placement pass: the source mod, StageDecor (place a thing with a style), SaveSteps (save) and LoadAudit, on test-colony. Select with -DepMap wsl-deps.outerrim-placed.map, filter 08-outer-rim-placement (pass name: outerrim-placed).
+nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
+nelim.pickletools.savesteps path:PickleTools/SaveSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+neronix17.outerrim.furnitureanddecor 2919553599

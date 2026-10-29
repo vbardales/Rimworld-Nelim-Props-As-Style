@@ -37,6 +37,8 @@ Record game build, mod list, date, scenario, result and log path.
 
 ## Pickle
 
-`Tests/Pickle/` holds seven features (44 scenario blocks), written 2026-10-29, **not played**, with seven passes and their maps: see `Tests/Pickle/README.md`. They use PickleTools steps only (`DefFieldSteps`, `LoadAudit`, new and not played either), no local step; `scripts/Check-Steps.ps1` resolves every line. They cover scenarios 1 to 7 (bare load, the five branches, the Royalty gate) and the load and language part of 11.
+`Tests/Pickle/` holds nine features (46 scenario blocks), written 2026-10-29, **not played**, with nine passes and their maps: see `Tests/Pickle/README.md`. They use PickleTools steps only (`DefFieldSteps`, `LoadAudit`, new and not played either), no local step; `scripts/Check-Steps.ps1` resolves every line. They cover scenarios 1 to 7 (bare load, the five branches, the Royalty gate) and the load and language part of 11.
 
-Not in Pickle, and why: 8 (no step reads the random graphics list; VEF Workshop id not recorded), 9 and 10 (no step places a building with a chosen style; asked of NPT 2026-10-29), 11 for what is drawn on screen (the label is read from the def, not the screen). Those stay by hand until a step exists.
+Features 07 and 08 place styled things on `test-colony` with NPT's StageDecor steps (commit 67ad18a, not played), read their style and texture, then save and reload: scenarios 9 and 10 for Rabbie and Outer Rim.
+
+Not in Pickle, and why: 8 (no step reads the random graphics list; VEF Workshop id not recorded), 9 and 10 for Ponpeco, Halloween and Chinese (not written yet) and occupied cells and cost for all (no step compares them), 11 for what is drawn on screen (the label is read from the def, not the screen). Those stay by hand until a step exists.

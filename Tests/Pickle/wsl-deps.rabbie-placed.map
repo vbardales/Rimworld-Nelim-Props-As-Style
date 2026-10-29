@@ -1,0 +1,5 @@
+# Rabbie placement pass: the source mod, StageDecor (place a thing with a style), SaveSteps (save) and LoadAudit, on test-colony. Select with -DepMap wsl-deps.rabbie-placed.map, filter 07-rabbie-placement (pass name: rabbie-placed).
+nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
+nelim.pickletools.savesteps path:PickleTools/SaveSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+runnelatki.rabbieracemod 1837246563
