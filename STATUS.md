@@ -22,7 +22,6 @@ remaining:
   - "2026-10-28: defect: public release needs a clean history (local main holds the Chinese textures in 718fc69); origin/main has unrelated history, 8 commits"
   - "2026-10-28: unverified: licence of the Halloween source mod and of each source mod for public release"
   - "2026-10-28: defect: Mod/About/PublishedFileId.txt holds 3811383287 while workshop is none: clarify before any publication"
-  - "2026-10-29: defect: Tests/Test-Styles.ps1 (renamed from Test-Chinese.ps1, now covers all five branches) has no justified row in scripts/LOCAL_SCRIPTS.md (Audit arbitrates, declare-local-script)"
   - "2026-10-29: unverified: scenarios 1 to 11 of TESTING.md not executed; Tests/Pickle/ not written, needs steps for style categories and styled placement (ask NPT if absent)"
   - "2026-10-29: unverified: Brazier gate (FindMod Royalty on the patch, MayRequire on the Halloween li) checked offline only; no game run without Royalty"
   - "2026-10-29: unverified: settings_audit not_applicable checked in sources only; absence of a Mod options entry and of a MainButtons shortcut not seen in game (playTests)"
