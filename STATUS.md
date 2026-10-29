@@ -27,6 +27,7 @@ remaining:
   - "2026-10-29: unverified: Brazier gate (FindMod Royalty on the patch, MayRequire on the Halloween li) checked offline only; no game run without Royalty"
   - "2026-10-29: unverified: settings_audit not_applicable checked in sources only; absence of a Mod options entry and of a MainButtons shortcut not seen in game (playTests)"
   - "2026-10-29: unverified: translated labels not seen in game (no raw key, no fallback, no clipping in the style picker); playTests"
+  - "2026-10-29: unverified: ticket 20261029-230425-794-9212 queued (pass bare, filter 00-bare, -DepMap wsl-deps.bare.map, tree d502a81, evidence Tests/Pickle/Inbox/bare), owner local_e5e0faff-5037-4f4c-9a07-237a9b87dcfc; on RUN_DONE read summary.json then junit.xml; next tickets one per pass (outerrim, ponpeco, rabbie, halloween, chinese, sans-royalty, rabbie-placed, outerrim-placed), each its own wsl-deps.<pass>.map file name; keep Mod/ and Tests/ frozen until the result"
 protocols_read_sha: e7eea11215fe05286cc18af60de64e15bc435b11
 updated: 2026-10-29
 ---
