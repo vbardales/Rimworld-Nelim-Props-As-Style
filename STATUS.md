@@ -9,7 +9,7 @@ workflow_stage: settings[1.0.0]
 licence: open
 licence_at: "2026-10-28: MIT (LICENSE), nothing of anyone else shipped; Chinese textures removed, source mods only pointed at"
 upstream_mod_remotes: N/A
-settings_audit: unchecked
+settings_audit: not_applicable
 localization: unchecked
 translation_en: unchecked
 translation_fr: unchecked
@@ -38,6 +38,10 @@ The private extraction of 2026-09-12 is gone: no Chinese texture is shipped any 
 Unverified: upstream declares 1.2 to 1.5 and has no `v1.6` entry in its `LoadFolders.xml`. Whether RimWorld 1.6 loads its root `Textures/` and its defs (the five style def names are kept from it, a duplicate `defName` is possible) needs a game run.
 
 `Tests/Test-Chinese.ps1`: 32 assertions pass (XML, references, no shipped texture, load gate, patch replay twice against Core). Scenarios in `TESTING.md`.
+
+## Settings audit, 2026-10-29
+
+Result: `not_applicable`. Revision: HEAD `7e1a8c2`, `Mod/` only. Inventory: the mod is XML only (no `Source/`, no `Assemblies/`, no `ModSettings` or `Mod` subclass possible). Parsed every non-About, non-Languages XML of `Mod/`: root children are only `StyleCategoryDef`, `ThingStyleDef`, `PatchOperationConditional` and the `LoadFolders` root. No `MainButtonDef`, no settings def. So no settings page under Mod options and no MainButtons shortcut exist. Nothing configurable that a player needs: a style is picked in the game's own style UI, gated by installed mods. Command: inline PowerShell XML walk of `git ls-files "Mod/*.xml"`. In-game check of the absence (no entry under Mod options, no MainButton) is left to `playTests`.
 
 ## Dependencies, 2026-10-29
 
