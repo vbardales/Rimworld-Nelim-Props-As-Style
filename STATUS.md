@@ -10,9 +10,9 @@ licence: open
 licence_at: "2026-10-28: MIT (LICENSE), nothing of anyone else shipped; Chinese textures removed, source mods only pointed at"
 upstream_mod_remotes: N/A
 settings_audit: not_applicable
-localization: unchecked
-translation_en: unchecked
-translation_fr: unchecked
+localization: complete
+translation_en: complete
+translation_fr: partial
 dependencies: declared
 workshop: none
 published: no
@@ -24,6 +24,8 @@ remaining:
   - "2026-10-28: defect: Mod/About/PublishedFileId.txt holds 3811383287 while workshop is none: clarify before any publication"
   - "2026-10-29: defect: Tests/Test-Chinese.ps1 has no justified row in scripts/LOCAL_SCRIPTS.md (Audit arbitrates, declare-local-script)"
   - "2026-10-29: unverified: settings_audit not_applicable checked in sources only; absence of a Mod options entry and of a MainButtons shortcut not seen in game (playTests)"
+  - "2026-10-29: unverified: French review by Virginie (FRENCH_REVIEW.md); doubts flagged: coruscanti vs coruscantien, tatooinien"
+  - "2026-10-29: unverified: translated labels not seen in game (no raw key, no fallback, no clipping in the style picker); playTests"
 protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
 updated: 2026-10-29
 ---
@@ -43,6 +45,12 @@ Unverified: upstream declares 1.2 to 1.5 and has no `v1.6` entry in its `LoadFol
 ## Settings audit, 2026-10-29
 
 Result: `not_applicable`. Revision: HEAD `7e1a8c2`, `Mod/` only. Inventory: the mod is XML only (no `Source/`, no `Assemblies/`, no `ModSettings` or `Mod` subclass possible). Parsed every non-About, non-Languages XML of `Mod/`: root children are only `StyleCategoryDef`, `ThingStyleDef`, `PatchOperationConditional` and the `LoadFolders` root. No `MainButtonDef`, no settings def. So no settings page under Mod options and no MainButtons shortcut exist. Nothing configurable that a player needs: a style is picked in the game's own style UI, gated by installed mods. Command: inline PowerShell XML walk of `git ls-files "Mod/*.xml"`. In-game check of the absence (no entry under Mod options, no MainButton) is left to `playTests`.
+
+## Translation audit, 2026-10-29
+
+Scope: `Mod/` of HEAD `b077f9e` plus the new French file. No C#, no Keyed: the only player-facing text is the `label` of the nine `StyleCategoryDef` (`ThingStyleDef` carry no label, nothing else is shown). English comes from the Def itself (no `Languages/English`). French lives in `Mod/Languages/French/DefInjected/StyleCategoryDef/Styles.xml` (seven labels: Corellian, Coruscant, Tatooine, PonpecoKids, PonpecoKidsB, Rabbie, RabbieB), `Mod/Chinese/Languages/French/.../Chinese.xml` (one) and, added today, `Mod/Halloween/Languages/French/.../Halloween.xml` (`PAS_Halloween.label`, missing before). Each French file sits in the folder its `LoadFolders` entry gates. No pawn text, so no gender agreement; no `tu` or `vous`.
+
+Commands, all green: `Check-Translations.ps1` (9 source texts, French injections, no stale entry), `Check-ModBasics.ps1` (13 XML, 78 defs), `Check-DefInjected.ps1 -TransMod PropsAsStyle/Mod` (9 keys checked, 0 errors; 8 `MayRequire` notes saying the French is not in an Ideology-gated folder: Ideology is a hard dependency of the whole mod, so left as is). `FRENCH_REVIEW.md` generated with `Make-FrenchReview.ps1`; `french-review-flags.json` carries the doubts. French review by Virginie not done.
 
 ## Dependencies, 2026-10-29
 
