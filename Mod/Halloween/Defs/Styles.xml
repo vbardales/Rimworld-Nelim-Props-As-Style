@@ -44,7 +44,7 @@
         <thingDef>Campfire</thingDef>
         <styleDef>PAS_Halloween_Campfire</styleDef>
       </li>
-      <li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">
         <thingDef>Brazier</thingDef>
         <styleDef>PAS_Halloween_Brazier</styleDef>
       </li>

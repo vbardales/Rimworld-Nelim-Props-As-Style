@@ -22,10 +22,12 @@ remaining:
   - "2026-10-28: defect: public release needs a clean history (local main holds the Chinese textures in 718fc69); origin/main has unrelated history, 8 commits"
   - "2026-10-28: unverified: licence of the Halloween source mod and of each source mod for public release"
   - "2026-10-28: defect: Mod/About/PublishedFileId.txt holds 3811383287 while workshop is none: clarify before any publication"
-  - "2026-10-29: defect: Tests/Test-Chinese.ps1 has no justified row in scripts/LOCAL_SCRIPTS.md (Audit arbitrates, declare-local-script)"
+  - "2026-10-29: defect: Tests/Test-Styles.ps1 (renamed from Test-Chinese.ps1, now covers all five branches) has no justified row in scripts/LOCAL_SCRIPTS.md (Audit arbitrates, declare-local-script)"
+  - "2026-10-29: unverified: scenarios 1 to 11 of TESTING.md not executed; Tests/Pickle/ not written, needs steps for style categories and styled placement (ask NPT if absent)"
+  - "2026-10-29: unverified: Brazier gate (FindMod Royalty on the patch, MayRequire on the Halloween li) checked offline only; no game run without Royalty"
   - "2026-10-29: unverified: settings_audit not_applicable checked in sources only; absence of a Mod options entry and of a MainButtons shortcut not seen in game (playTests)"
   - "2026-10-29: unverified: translated labels not seen in game (no raw key, no fallback, no clipping in the style picker); playTests"
-protocols_read_sha: 0de1645871c6a385f04273c57529a088baf6d391
+protocols_read_sha: 05758453139b9bb96a160035e5759e58183113b6
 updated: 2026-10-29
 ---
 
@@ -39,7 +41,7 @@ The private extraction of 2026-09-12 is gone: no Chinese texture is shipped any 
 
 Unverified: upstream declares 1.2 to 1.5 and has no `v1.6` entry in its `LoadFolders.xml`. Whether RimWorld 1.6 loads its root `Textures/` and its defs (the five style def names are kept from it, a duplicate `defName` is possible) needs a game run.
 
-`Tests/Test-Chinese.ps1`: 32 assertions pass (XML, references, no shipped texture, load gate, patch replay twice against Core). Scenarios in `TESTING.md`.
+`Tests/Test-Styles.ps1`: scenarios and what the test covers are in `TESTING.md`.
 
 ## Settings audit, 2026-10-29
 
@@ -51,9 +53,13 @@ Scope: `Mod/` of HEAD `b077f9e` plus the new French file. No C#, no Keyed: the o
 
 Commands, all green: `Check-Translations.ps1` (9 source texts, French injections, no stale entry), `Check-ModBasics.ps1` (13 XML, 78 defs), `Check-DefInjected.ps1 -TransMod PropsAsStyle/Mod` (9 keys checked, 0 errors; 8 `MayRequire` notes saying the French is not in an Ideology-gated folder: Ideology is a hard dependency of the whole mod, so left as is). `FRENCH_REVIEW.md` generated with `Make-FrenchReview.ps1`; `french-review-flags.json` carries the doubts. French review: Virginie, 2026-10-29, revision `0bc9e15` (French files unchanged since `e737369`), validated in chat, no correction; she kept `coruscanti` (English demonym) and `tatooinien` (no French source found for either, not official forms). The ChatGPT review (`/review-translation`, run twice) found no linguistic defect. The review table of `FRENCH_REVIEW.md` is hers and was left untouched.
 
+## writeTests, 2026-10-29
+
+`Tests/Test-Styles.ps1` (see `TESTING.md`) replaces `Test-Chinese.ps1` and covers the five branches: 496 assertions pass, and it fails on the previous commit. It found a defect, fixed the same day: `Brazier` is a Royalty def, but the root patch and the Halloween category targeted it unconditionally, so a game without Royalty would log a failed patch and an unresolved reference. The Brazier patch now sits in a `PatchOperationFindMod` for Royalty, the Halloween `li` carries `MayRequire="Ludeon.RimWorld.Royalty"`, `Ludeon.RimWorld.Royalty` is in `loadAfter`, and the `About.xml` description now says eleven patched targets (it said nine, the patch has eleven). Royalty is optional. Pickle suites and in-game scenarios are not written or run.
+
 ## Dependencies, 2026-10-29
 
 Hard: Ideology (`Ludeon.RimWorld.Ideology`), the style system itself. Nothing else is required.
-Optional, each gated by `LoadFolders.xml` and listed in `loadAfter`: Outer Rim (`neronix17.outerrim.furnitureanddecor`), Ponpeco Kids' Room (`ponpeco.pfkidsroom`), Rabbie (`runnelatki.rabbieracemod`), Alpha Props (`sarg.alphapropsparks`, needs Vanilla Expanded Framework `OskarPotocki.VanillaFactionsExpanded.Core`), Halloween Monster Mash Renew (`nelim.halloweenmonstermash`), Chinese Traditional Cultural Things Expanded (`Dajian.ChiTeaditional.Expanded`). Style Change Anytime (`Dra.StyleChangeAnytime`) is recommended, `loadAfter` only. No `MayRequire`, no incompatibility. The root patch only adds `CompProperties_Styleable` to vanilla defs, defensively. No animal added. `sort-load-order.py` not run (it needs a Pickle staging directory).
+Optional: Royalty (`Ludeon.RimWorld.Royalty`), only for the Brazier style and its patch, gated by `MayRequire` and `PatchOperationFindMod`, in `loadAfter` (added 2026-10-29). Optional, each gated by `LoadFolders.xml` and listed in `loadAfter`: Outer Rim (`neronix17.outerrim.furnitureanddecor`), Ponpeco Kids' Room (`ponpeco.pfkidsroom`), Rabbie (`runnelatki.rabbieracemod`), Alpha Props (`sarg.alphapropsparks`, needs Vanilla Expanded Framework `OskarPotocki.VanillaFactionsExpanded.Core`), Halloween Monster Mash Renew (`nelim.halloweenmonstermash`), Chinese Traditional Cultural Things Expanded (`Dajian.ChiTeaditional.Expanded`). Style Change Anytime (`Dra.StyleChangeAnytime`) is recommended, `loadAfter` only. No `MayRequire`, no incompatibility. The root patch only adds `CompProperties_Styleable` to vanilla defs, defensively. No animal added. `sort-load-order.py` not run (it needs a Pickle staging directory).
 
 Fixed 2026-10-29: the Halloween gate used `nelim.halloweenmonstermashrenew`, but the port's packageId is `nelim.halloweenmonstermash`, so that branch never loaded. `LoadFolders.xml`, the Halloween def comment and `loadAfter` now use the real id; the description lists it.

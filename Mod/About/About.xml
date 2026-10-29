@@ -22,7 +22,7 @@ And as random graphics, needing Vanilla Expanded Framework:
 
 Each source is gated by LoadFolders, so a mod you do not have costs nothing and errors nothing.
 
-Nine vanilla targets are not styleable out of the box - Bed, DoubleBed, Dresser, EndTable, Bedroll, RoyalBed, AnimalBed, Armchair and Door - so the mod adds the component to them, defensively: it creates the comps node only if missing, and adds the component only if not already there.
+Eleven vanilla targets are not styleable out of the box - Bed, DoubleBed, Dresser, EndTable, Bedroll, RoyalBed, AnimalBed, Armchair, Door, Campfire and Brazier (Brazier only with Royalty) - so the mod adds the component to them, defensively: it creates the comps node only if missing, and adds the component only if not already there.
 
 Needs Ideology for the style system itself. Style Change Anytime is recommended: without it a style category has to be attached to an ideoligion before you can use it.
 
@@ -36,6 +36,7 @@ No save data of its own.</description>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Royalty</li>
     <li>neronix17.outerrim.furnitureanddecor</li>
     <li>ponpeco.pfkidsroom</li>
     <li>runnelatki.rabbieracemod</li>
