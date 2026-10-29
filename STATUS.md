@@ -24,7 +24,7 @@ remaining:
   - "2026-10-28: defect: Mod/About/PublishedFileId.txt holds 3811383287 while workshop is none: clarify before any publication"
   - "2026-10-29: defect: Tests/Test-Chinese.ps1 has no justified row in scripts/LOCAL_SCRIPTS.md (Audit arbitrates, declare-local-script)"
   - "2026-10-29: unverified: settings_audit not_applicable checked in sources only; absence of a Mod options entry and of a MainButtons shortcut not seen in game (playTests)"
-  - "2026-10-29: unverified: French review by Virginie (FRENCH_REVIEW.md); doubts flagged: coruscanti vs coruscantien, tatooinien"
+  - "2026-10-29: unverified: French review by Virginie (FRENCH_REVIEW.md); Virginie decided 2026-10-29 to keep coruscanti (English demonym) and tatooinien: no French source found for either, not official forms"
   - "2026-10-29: unverified: translated labels not seen in game (no raw key, no fallback, no clipping in the style picker); playTests"
 protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
 updated: 2026-10-29
