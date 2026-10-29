@@ -5,7 +5,7 @@ repo: Rimworld-Nelim-Props-As-Style
 remote: https://github.com/vbardales/Rimworld-Nelim-Props-As-Style.git
 visibility: public
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: open
 licence_at: "2026-10-28: MIT (LICENSE), nothing of anyone else shipped; Chinese textures removed, source mods only pointed at"
 upstream_mod_remotes: N/A
@@ -27,7 +27,7 @@ remaining:
   - "2026-10-29: unverified: Brazier gate (FindMod Royalty on the patch, MayRequire on the Halloween li) checked offline only; no game run without Royalty"
   - "2026-10-29: unverified: settings_audit not_applicable checked in sources only; absence of a Mod options entry and of a MainButtons shortcut not seen in game (playTests)"
   - "2026-10-29: unverified: translated labels not seen in game (no raw key, no fallback, no clipping in the style picker); playTests"
-protocols_read_sha: 05758453139b9bb96a160035e5759e58183113b6
+protocols_read_sha: e7eea11215fe05286cc18af60de64e15bc435b11
 updated: 2026-10-29
 ---
 
@@ -55,7 +55,7 @@ Commands, all green: `Check-Translations.ps1` (9 source texts, French injections
 
 ## writeTests, 2026-10-29
 
-`Tests/Test-Styles.ps1` (see `TESTING.md`) replaces `Test-Chinese.ps1` and covers the five branches: 496 assertions pass, and it fails on the previous commit. It found a defect, fixed the same day: `Brazier` is a Royalty def, but the root patch and the Halloween category targeted it unconditionally, so a game without Royalty would log a failed patch and an unresolved reference. The Brazier patch now sits in a `PatchOperationFindMod` for Royalty, the Halloween `li` carries `MayRequire="Ludeon.RimWorld.Royalty"`, `Ludeon.RimWorld.Royalty` is in `loadAfter`, and the `About.xml` description now says eleven patched targets (it said nine, the patch has eleven). Royalty is optional. Pickle suites and in-game scenarios are not written or run.
+`Tests/Test-Styles.ps1` (see `TESTING.md`) replaces `Test-Chinese.ps1` and covers the five branches: 496 assertions pass, and it fails on the previous commit. It found a defect, fixed the same day: `Brazier` is a Royalty def, but the root patch and the Halloween category targeted it unconditionally, so a game without Royalty would log a failed patch and an unresolved reference. The Brazier patch now sits in a `PatchOperationFindMod` for Royalty, the Halloween `li` carries `MayRequire="Ludeon.RimWorld.Royalty"`, `Ludeon.RimWorld.Royalty` is in `loadAfter`, and the `About.xml` description now says eleven patched targets (it said nine, the patch has eleven). Royalty is optional. Pickle suites (7 features, 7 passes, PickleTools steps only, `Check-Steps` clean) are written and not played; in-game scenarios are not run. Tested revision: `Tests/Test-Styles.ps1` green at `75c5479` (496 assertions, replayed 2026-10-29; `Mod/` unchanged since `338bf02`), `Check-ModBasics` and `Check-Translations` green the same day. Not applicable, written in `TESTING.md` and `Tests/Pickle/README.md`: scenarios 8 to 11 for the parts no step covers.
 
 ## Dependencies, 2026-10-29
 
