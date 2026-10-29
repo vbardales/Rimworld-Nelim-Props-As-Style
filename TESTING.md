@@ -37,4 +37,6 @@ Record game build, mod list, date, scenario, result and log path.
 
 ## Pickle
 
-No `Tests/Pickle/` yet. Scenarios 1 to 11 show what only a running game shows (styles drawn, pink squares, the picker), so they belong in Pickle. Writing them needs steps to read the loaded style categories and to place a building with a chosen style. Whether those steps exist is not known; if not, they are asked of NPT (PickleTools), never written locally. Each branch needs a map that mounts its source mod, declared by `@requires:<packageId>`.
+`Tests/Pickle/` holds seven features (44 scenario blocks), written 2026-10-29, **not played**, with seven passes and their maps: see `Tests/Pickle/README.md`. They use PickleTools steps only (`DefFieldSteps`, `LoadAudit`, new and not played either), no local step; `scripts/Check-Steps.ps1` resolves every line. They cover scenarios 1 to 7 (bare load, the five branches, the Royalty gate) and the load and language part of 11.
+
+Not in Pickle, and why: 8 (no step reads the random graphics list; VEF Workshop id not recorded), 9 and 10 (no step places a building with a chosen style; asked of NPT 2026-10-29), 11 for what is drawn on screen (the label is read from the def, not the screen). Those stay by hand until a step exists.

@@ -1,0 +1,4 @@
+# Halloween Monster Mash Renew, the 1.6 port, staged from the repository (a path: line). Select with -DepMap wsl-deps.halloween.map, filter 04-halloween (pass name: halloween). The port declares Vanilla Cooking Expanded as a dependency: confirm at the first staging that it is pulled in.
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+nelim.halloweenmonstermash path:HalloweenMonsterMashRenew/Mod

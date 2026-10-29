@@ -1,0 +1,5 @@
+# The Halloween port with the Royalty DLC left out: the Brazier gate has to hold. Select with -DepMap wsl-deps.sans-royalty.map, filter 06-halloween-sans-royalty (pass name: sans-royalty).
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+nelim.halloweenmonstermash path:HalloweenMonsterMashRenew/Mod
+!ludeon.rimworld.royalty

@@ -12,6 +12,8 @@ desktop.ini
 .DS_Store
 evidence/
 Tests/Pickle/Evidence/
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/
 Art/.render/
 *.dds
 **/Source/obj/

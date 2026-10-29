@@ -1,0 +1,4 @@
+# Outer Rim - Furniture and Decor (Workshop 2919553599). Select with -DepMap wsl-deps.outerrim.map, filter 01-outer-rim (pass name: outerrim).
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+neronix17.outerrim.furnitureanddecor 2919553599

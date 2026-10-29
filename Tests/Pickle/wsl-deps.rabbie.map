@@ -1,0 +1,4 @@
+# Rabbie The Moonrabbit race (Workshop 1837246563). Select with -DepMap wsl-deps.rabbie.map, filter 03-rabbie (pass name: rabbie).
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+runnelatki.rabbieracemod 1837246563

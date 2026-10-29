@@ -1,0 +1,4 @@
+# Ponpeco Furnitures: Kids' Room (Workshop 3367310887). Select with -DepMap wsl-deps.ponpeco.map, filter 02-ponpeco-kids (pass name: ponpeco).
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+ponpeco.pfkidsroom 3367310887

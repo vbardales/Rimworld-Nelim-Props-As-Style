@@ -1,0 +1,4 @@
+# Chinese Traditional Cultural Things Expanded (Workshop 2877536640). Select with -DepMap wsl-deps.chinese.map, filter 05-chinese (pass name: chinese).
+nelim.pickletools.deffields path:PickleTools/DefFieldSteps/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
+Dajian.ChiTeaditional.Expanded 2877536640
